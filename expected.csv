@@ -1,0 +1,7 @@
+txn_id,status,expected_minor,settled_minor,settlement_count,variance_minor,outcome
+T1,captured,1000,1000,2,0,matched
+T2,captured,500,0,0,-500,missing_settlement
+T3,captured,900,850,1,-50,amount_mismatch
+T4,failed,0,700,1,700,unexpected_settlement
+T5,failed,0,0,0,0,no_settlement_due
+T6,,0,300,1,300,unexpected_settlement
